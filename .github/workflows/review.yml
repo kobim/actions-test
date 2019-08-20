@@ -5,6 +5,6 @@ jobs:
   enforce:
     runs-on: ubuntu-latest
     steps:
-    - uses: kobim/action-review-enforcer
+    - uses: kobim/action-review-enforcer@v1
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
