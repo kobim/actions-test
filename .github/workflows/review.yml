@@ -1,5 +1,5 @@
 name: "Reviewers"
-on: [pull_request]
+on: pull_request
 jobs:
   enforce:
     name: Enforce
