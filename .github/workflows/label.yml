@@ -1,9 +1,10 @@
+name: Labeler
 on: [pull_request]
+
 jobs:
-  enforce:
-    name: Enforce Reviewers
+  label:
     runs-on: ubuntu-latest
     steps:
-    - uses: kobim/action-review-enforcer@v1
+    - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
