@@ -1,7 +1,8 @@
+name: "Reviewers"
 on: [pull_request]
 jobs:
   enforce:
-    name: Enforce Reviewers
+    name: Enforce
     runs-on: ubuntu-latest
     steps:
     - uses: kobim/action-review-enforcer@v1
