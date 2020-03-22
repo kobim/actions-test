@@ -1,0 +1,26 @@
+# Make sure branch is updated on master
+updateBranch: true
+
+deleteBranchAfterMerge: true
+reportStatus: true
+mergeMethod: squash
+
+# Block merging if there are any requested changes
+maxRequestedChanges:
+  CONTRIBUTOR: 0
+
+blockingLabels:
+- blocked
+- WIP
+- Do not merge
+- awaiting canary
+- undergoing canary
+- draft do not review
+
+# Block merge if WIP is in the title
+blockingTitleRegex: '\bWIP\b'
+
+# Only auto-merge if the "Ready to auto-merge" label is on the PR.
+requiredLabels:
+- auto-merge
+
